@@ -1,0 +1,30 @@
+[project]
+name = "langgraph-lectures"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents>=0.0.5",
+    "email-assistant>=0.0.0",
+    "jupyter>=1.1.1",
+    "langchain-community>=0.3.29",
+    "langchain-core>=0.3.75",
+    "langchain-huggingface>=0.3.1",
+    "langchain-ollama>=0.3.7",
+    "langgraph>=0.6.7",
+    "langgraph-checkpoint-sqlite>=2.0.11",
+    "langgraph-cli[inmem]>=0.4.2",
+    "langgraph-prebuilt>=0.6.4",
+    "langgraph-sdk>=0.2.6",
+    "langsmith>=0.4.26",
+    "notebook>=7.4.5",
+    "pandas>=2.3.3",
+    "pyarrow>=21.0.0",
+    "rich>=14.1.0",
+    "sentence-transformers>=5.1.2",
+    "tavily-python>=0.7.11",
+    "transformers>=4.57.0",
+    "trustcall>=0.0.39",
+    "wikipedia>=1.4.0",
+]

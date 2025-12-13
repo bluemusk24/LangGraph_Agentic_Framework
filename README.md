@@ -167,3 +167,52 @@ docker-compose up (--build)     # Launch 3 Langgraph containers: API Server, Red
 ## Links for more Langgraph Knowledge
 [Deep Agents Made Easy](https://github.com/langchain-ai/deepagents)
 [MCP with Langchain](https://github.com/langchain-ai/langchain-mcp-adapters)
+
+
+## Agentic AI with LangGraph (YouTube Lectures)
+
+Lesson_1: LangGraph Tutorial-Getting Started With Pydantic-Data Validations
+- [pydantic_basics](agentic_ai/lesson1_Pydantic/pydantic_basics.ipynb)
+
+Lesson_2: Getting Started With LangGraph For Building AI Agents
+- [simple_graph](agentic_ai/lesson2_LangGraph Basics/simplegraph.ipynb)
+
+Lesson_3: Build Agentic AI Chatbot Using LangGraph
+- [tools_calling](agentic_ai/lesson3_Agentic AI Chatbot wt LangGraph/chat_tools.ipynb)
+
+Lesson_4: Agentic AI With Langgraph And MCP Crash Course-Part 1
+***Stdio***
+- [math_server](agentic_ai/lesson4_Langgraph & MCP/math_server.py)        
+- [math_client_script](agentic_ai/lesson4_Langgraph & MCP/math_client.py)
+- [weather_stdio](agentic_ai/lesson4_Langgraph & MCP/weather_stdio.py)
+
+***Streamable-http (sse)***
+- [weather_http](agentic_ai/lesson4_Langgraph & MCP/weather_http.py)         
+- [weather_client](agentic_ai/lesson4_Langgraph & MCP/weather_client.py)
+
+***MCP Inspector***
+- [servers_script](agentic_ai/lesson4_Langgraph & MCP/servers.py)
+
+```bash
+# run math_server and math_client alone
+uv run python math_server.py
+uv run python math_client.py
+
+# run weather_server and weather_client 
+uv run python weather.py        # for stremable-http
+uv run python weather_client.py
+
+# run combined weather_stdio and math servers.
+uv run python client.py
+
+# Using with LangGraph StateGraph
+uv run python mcp_langgraph.py
+
+# run MCP Inspector
+mcp dev servers.py
+```
+***Multimodal RAG***
+[multimodal_rag](agentic_ai/multimodalopenai.ipynb)
+
+***Multi-Agent with LangGraph***
+[multi-agent](agentic_ai/multi-agent.ipynb)
